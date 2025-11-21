@@ -1,0 +1,107 @@
+:root {
+    --cor-header-bg: #213635;
+    --cor-header-text: #F2F2F2;
+    --cor-btn-primary: #348E91;
+    --cor-btn-secondary: #1C5052;
+    --cor-fundo-claro: #F2F2F2;
+    --cor-fundo-escuro: #0A0C0D;
+    --cor-fundo-escuro-leve: #213635;
+    --cor-texto-escuro: #0A0C0D;
+    --cor-texto-claro: #F2F2F2;
+    --font-padrao: "Arial", Helvetica, sans-serif;
+    --font-destaque: "Comic Sans MS", cursive, sans-serif;
+    --max-width: 1200px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+input[type="text"] {
+    padding: 8px;
+    width: 250px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+body {
+    font-family: var(--font-padrao);
+    background-color: var(--cor-fundo-claro);
+    color: var(--cor-texto-escuro);
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: var(--cor-header-bg);
+    color: var(--cor-header-text);
+    height: 70px;
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+}
+
+header h1 {
+    font-family: var(--font-destaque);
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+nav button {
+    padding: 10px 20px;
+    background-color: var(--cor-btn-primary);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: var(--font-destaque);
+    font-weight: bold;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+nav button:hover {
+    background-color: var(--cor-header-bg);
+}
+
+nav button:active {
+    background-color: var(--cor-btn-secondary);
+}
+
+main {
+    padding: 150px 30px 20px; /* Aumentado para 150px para mais espaço */
+    max-width: 900px;
+    margin: 40px auto;
+    background: white;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 10px rgb(0 0 0 / 0.1);
+}
+
+main h1 {
+    color: var(--cor-btn-primary);
+    font-family: var(--font-destaque);
+    margin-bottom: 15px;
+}
+
+footer {
+    background-color: var(--cor-fundo-escuro);
+    color: var(--cor-texto-claro);
+    text-align: center;
+    padding: 30px 20px;
+    font-size: 0.9rem;
+    user-select: none;
+    margin-top: 60px;
+}
