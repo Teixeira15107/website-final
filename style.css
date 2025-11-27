@@ -25,12 +25,14 @@ input[type="text"] {
     margin-bottom: 20px;
     border: 1px solid #ccc;
     border-radius: 4px;
+   
 }
 
 body {
     font-family: var(--font-padrao);
     background-color: var(--cor-fundo-claro);
     color: var(--cor-texto-escuro);
+
 }
 
 header {
@@ -39,13 +41,32 @@ header {
     width: 100%;
     background-color: var(--cor-header-bg);
     color: var(--cor-header-text);
-    height: 70px;
+    height: 80px;
     padding: 0 30px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-between; /* já está ok */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-    z-index: 1000;
+}
+
+/* Containers dentro do header */
+.header-left {
+    display: flex;
+    align-items: center;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* espaço entre input e nav */
+}
+
+/* Ajuste do input */
+.header-right #busca {
+    width: 200px;
+    padding: 6px 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
 }
 
 header h1 {
@@ -61,7 +82,7 @@ nav {
 
 nav button {
     padding: 10px 20px;
-    background-color: var(--cor-btn-primary);
+    background-color: var(--cor-header-bg);
     color: white;
     border: none;
     border-radius: 5px;
@@ -80,20 +101,59 @@ nav button:active {
     background-color: var(--cor-btn-secondary);
 }
 
+cx1 {
+    padding: 150px 30px 20px; /* Similar padding to main */
+    max-width: 900px;          /* Set max width to 900px for consistency */
+    margin: 40px auto;         /* Center align the container with margin */
+    background: white;         /* Set background to white */
+    border-radius: 10px;       /* Round the corners */
+    text-align: center;        /* Center the text */
+    box-shadow: 0 0 10px rgb(0 0 0 / 0.1); /* Add a soft shadow */
+}
+
 main {
-    padding: 150px 30px 20px; /* Aumentado para 150px para mais espaço */
-    max-width: 900px;
-    margin: 40px auto;
-    background: white;
-    border-radius: 10px;
-    text-align: center;
-    box-shadow: 0 0 10px rgb(0 0 0 / 0.1);
+    padding: 50px 30px 20px;  /* A similar amount of padding */
+    max-width: 900px;          /* Ensures both have the same width */
+    margin: 40px auto;         /* Center align main content */
+    background: white;         /* White background */
+    border-radius: 10px;       /* Rounded corners */
+    text-align: center;        /* Center text */
+    box-shadow: 0 0 10px rgb(0 0 0 / 0.1); /* Soft shadow */
+    margin-top: 100px;
 }
 
 main h1 {
     color: var(--cor-btn-primary);
     font-family: var(--font-destaque);
     margin-bottom: 15px;
+}
+main p {
+    color: var(--cor-texto-escuro);
+    font-family: var(--font-padrao);
+    margin-bottom: 15px;
+    text-align: justify;
+    font-size: 16px;
+}
+
+
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0;
+    padding: 0;
+    
+}
+
+li {
+    list-style: none;
+    text-align: center;
+}
+li img {
+    width: 160px;
+    height: 160px;
+    display: block;
+    margin: 0 auto 6px auto;
 }
 
 footer {
@@ -105,3 +165,75 @@ footer {
     user-select: none;
     margin-top: 60px;
 }
+
+.class-card {
+    width: 100%;
+    max-width: 380px;
+    height: 420px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    border-radius: 15px;
+    margin: 20px auto;
+
+    position: relative;
+    overflow: hidden;
+
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+
+    padding-bottom: 20px;
+    cursor: pointer;
+
+    transition: transform 0.3s ease;
+}
+
+.class-card:hover {
+    transform: scale(1.03);
+}
+
+.class-card span {
+    background: rgba(255, 255, 255, 0.85);
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-weight: bold;
+    color: #000;
+}
+
+article {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 20px;
+}
+
+.class-card {
+    flex: 1;
+    max-width: 380px;
+}
+.class-card[data-img="1"] {
+    background-image: url("Imgs/materiais\ de\ ensino.png");
+}
+
+.class-card[data-img="2"] {
+    background-image: url("Imgs/Preparação\ para\ Testes.png");
+}
+
+
+.class-card[data-img="3"] {
+    background-image: url("Imgs/arte.png");
+}
+.class-card[data-img="4"] {
+    background-image: url("Imgs/historia.png");
+}
+
+.class-card[data-img="5"] {
+    background-image: url("Imgs/negocios.png");
+}
+.class-card[data-img="6"] {
+    background-image: url("Imgs/direito.png");
+}
+
+

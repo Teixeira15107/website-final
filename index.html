@@ -9,24 +9,70 @@
 
 <body>
     <header>
-        <h1 class="text">Ebook SYNC</h1> <!-- Adicionada classe para corresponder ao CSS original -->
-        <input type="text" id="busca" placeholder="Pesquisar...">
+        <div class="header-left">
+            <h1>Ebook SYNC</h1>
+        </div>
+        <div class="header-right">
+            <input type="text" id="busca" placeholder="Pesquisar...">
         <nav>
-            <button class="botao" onclick="window.location.href='ultimas.html'">Últimas</button>
-            <button class="botao" onclick="window.location.href='desporto.html'">Desporto</button>
-            <button class="botao" onclick="window.location.href='politica.html'">Política</button>    
+            <button class="botao" onclick="window.location.href='escolar.html'">Escolar</button>
+            <button class="botao" onclick="window.location.href='profissional.html'">Profissional</button>
+            <button class="botao" onclick="window.location.href='cultura.html'">Cultura</button>  
+  
         </nav>
+        </div>
     </header>
 
     <main>
         <h1>Bem-vindo ao Ebook SYNC</h1> <!-- Movido para main, conforme estilos CSS -->
         <article>
-            <p>“Ideias que cabem no seu bolso.”</p>
+            <h2>“Ideias que cabem no seu bolso.”</h2>
         </article>
     </main>
 
+    <main> 
+        <h1>Quem Somos e oque fazemos?</h1>
+        <p>
+            A Ebook Sync é uma plataforma criada para quem busca conhecimento de forma prática e acessível.
+            Reunimos uma ampla variedade de e-books que abrangem temas escolares, profissionais e culturais, oferecendo conteúdos que ajudam desde estudantes em fase de aprendizagem até profissionais que desejam aprimorar suas habilidades.
+            Nosso objetivo é facilitar o acesso à informação de qualidade, reunindo materiais bem estruturados, atualizados e produzidos para apoiar o desenvolvimento pessoal e intelectual.
+            Na Ebook Sync, acreditamos que aprender deve ser simples, agradável e disponível para todos — por isso, trabalhamos continuamente para ampliar nosso catálogo e garantir que você encontre o que precisa em um só lugar.
+            Explore, descubra e evolua com a Ebook Sync.
+        </p>
+    </main>
+
+    <main>
+        <h1>Documentos</h1>
+        <article>
+            <div class="class-card" data-img="1" onclick="location.href='metodos.html'">
+                <span>Métodos e materiais de ensino</span>
+            </div>
+
+            <div class="class-card" data-img="2" onclick="location.href='testes.html'">
+                <span>Preparação para Testes</span>
+            </div>
+
+
+            <div class="class-card" data-img="3" onclick="location.href='arte.html'">
+                <span>Arte</span>
+            </div>
+
+            <div class="class-card" data-img="4" onclick="location.href='historia.html'">
+                <span>História</span>
+            </div>
+
+
+            <div class="class-card" data-img="5" onclick="location.href='negocios.html'">
+                <span>Negócios</span>
+            </div>
+
+            <div class="class-card" data-img="6" onclick="location.href='direito.html'">
+                <span>Direito</span>
+            </div>
+        </article>
+
     <footer>
-        &copy; 2023 Ebook SYNC. Todos os direitos reservados. <!-- Conteúdo corrigido -->
+        <p>2025 Ebook SYNC. Todos os direitos reservados a Rafael Teixeira 11ºd2.</p>
     </footer>
 </body>
 </html>
